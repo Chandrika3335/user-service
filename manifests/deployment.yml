@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: chandrikauserservice 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chandrikauserservice
+  template:
+    metadata:
+      labels:
+        app: chandrikauserservice 
+    spec:
+      containers:
+        - name: chandrikauserservice 
+          image: teamacr2.azurecr.io/chandrikauserservice
+          ports:
+          - containerPort: 8082
