@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: revhire-user
-          image: teamacr2.azurecr.io/chandrikauserservice:92
+          image: teamacr2.azurecr.io/chandrikauserservice:94
           env:
           - name : DB_URL
             valueFrom: 
